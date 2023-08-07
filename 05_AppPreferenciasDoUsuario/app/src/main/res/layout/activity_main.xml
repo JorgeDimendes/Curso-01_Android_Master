@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/lauoutPrincipal"
+    tools:context=".MainActivity">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cor01"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/bg_button"
+                android:backgroundTint="@color/color01"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cor02"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/bg_button"
+                android:backgroundTint="@color/color02"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cor03"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/bg_button"
+                android:backgroundTint="@color/color03"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cor04"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/bg_button"
+                android:backgroundTint="@color/color04"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cor05"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/bg_button"
+                android:backgroundTint="@color/color05"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/bt_trocar_cor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/blue_dark"
+        android:text="Trocar Imagem de Fundo"
+        android:textSize="20dp"
+        android:padding="15dp"/>
+
+</LinearLayout>
