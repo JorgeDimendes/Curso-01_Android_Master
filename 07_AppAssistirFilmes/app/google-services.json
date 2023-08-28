@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "16931125820",
-    "project_id": "aplicativo-de-filmes-fb03c",
-    "storage_bucket": "aplicativo-de-filmes-fb03c.appspot.com"
+    "project_number": "53302549780",
+    "project_id": "aplicativo-de-filmes-409fc",
+    "storage_bucket": "aplicativo-de-filmes-409fc.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:16931125820:android:fbae0a117cba9ff8a16139",
+        "mobilesdk_app_id": "1:53302549780:android:33063110f62159bcb13601",
         "android_client_info": {
-          "package_name": "com.jordev.appassistirfilmes"
+          "package_name": "com.marcos.appdefilmes"
         }
       },
       "oauth_client": [
         {
-          "client_id": "16931125820-qp3qn94u5shi160egpv17k3eo4a02llv.apps.googleusercontent.com",
+          "client_id": "53302549780-vifq2gtcs4g9scl973ojnmshjk1q5ojc.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA7RXmi3YQlQwmT2_l_0qE0kyZocsC2ePg"
+          "current_key": "AIzaSyCD2UKOlJkbnmikviKJ1wHrk2iF9lLfxAM"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "16931125820-qp3qn94u5shi160egpv17k3eo4a02llv.apps.googleusercontent.com",
+              "client_id": "53302549780-vifq2gtcs4g9scl973ojnmshjk1q5ojc.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

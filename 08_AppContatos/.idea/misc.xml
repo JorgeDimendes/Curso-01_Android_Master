@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/marco/AndroidStudioProjects/AgendadeContatos/app/src/main/res/drawable/ic_atualizar.xml" value="0.2535" />
+        <entry key="..\:/Users/marco/AndroidStudioProjects/AgendadeContatos/app/src/main/res/drawable/ic_deletar.xml" value="0.2535" />
+        <entry key="..\:/Users/marco/AndroidStudioProjects/AgendadeContatos/app/src/main/res/layout/activity_atualizar_usuario.xml" value="0.26358695652173914" />
+        <entry key="..\:/Users/marco/AndroidStudioProjects/AgendadeContatos/app/src/main/res/layout/activity_cadastrar_usuario.xml" value="0.3" />
+        <entry key="..\:/Users/marco/AndroidStudioProjects/AgendadeContatos/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/marco/AndroidStudioProjects/AgendadeContatos/app/src/main/res/layout/contato_item.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

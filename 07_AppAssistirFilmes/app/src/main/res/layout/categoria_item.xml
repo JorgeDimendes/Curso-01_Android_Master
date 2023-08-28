@@ -12,8 +12,7 @@
         android:textSize="18sp"
         android:textColor="@color/white"
         android:textStyle="bold"
-        android:layout_margin="20dp"
-        />
+        android:layout_margin="20dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewFilmes"

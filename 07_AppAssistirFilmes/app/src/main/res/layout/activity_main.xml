@@ -12,15 +12,16 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Jorge Vision"
-        android:textSize="40sp"
+        android:text="App de Filmes"
+        android:textSize="30sp"
+        android:textColor="@color/red"
         android:textStyle="bold"
-        android:textColor="@color/red"/>
+        android:layout_marginBottom="20dp"/>
 
     <ProgressBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:indeterminateTint="@color/red"
-        android:layout_marginTop="20dp"/>
+        />
 
 </LinearLayout>

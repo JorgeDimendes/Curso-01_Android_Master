@@ -10,48 +10,47 @@
         android:id="@+id/containerHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/black"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="parent"
-        android:background="@color/black"
-        android:padding="10dp"
-        android:orientation="horizontal">
+        app:layout_constraintEnd_toEndOf="parent">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Jorge Vision"
+            android:text="App de Filmes"
             android:textSize="12sp"
+            android:textColor="@color/red"
             android:textStyle="bold"
-            android:layout_marginEnd="15dp"
-            android:textColor="@color/red"/>
+            android:layout_margin="10dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Series"
+            android:text="Séries"
             android:textSize="16sp"
-            android:layout_marginEnd="10dp"
+            android:textColor="@color/white"
             android:textStyle="bold"
-            android:textColor="@color/white"/>
+            android:layout_margin="10dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Filmes"
-            android:layout_marginEnd="10dp"
             android:textSize="16sp"
+            android:textColor="@color/white"
             android:textStyle="bold"
-            android:textColor="@color/white"/>
+            android:layout_margin="10dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Minha Lista"
-            android:layout_marginEnd="10dp"
             android:textSize="16sp"
+            android:textColor="@color/white"
             android:textStyle="bold"
-            android:textColor="@color/white"/>
+            android:layout_margin="10dp"/>
 
         <TextView
             android:id="@+id/txtSair"
@@ -59,18 +58,56 @@
             android:layout_height="wrap_content"
             android:text="Sair"
             android:textSize="16sp"
+            android:textColor="@color/white"
             android:textStyle="bold"
-            android:textColor="@color/white"/>
+            android:layout_margin="10dp"/>
 
     </LinearLayout>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewFilmes"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="@color/dark_gray"
-        app:layout_constraintTop_toBottomOf="@+id/containerHeader"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containerHeader"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/containerProgressBar"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:visibility="visible"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/red"
+        android:visibility="visible"
+        app:layout_constraintTop_toTopOf="@id/containerProgressBar"
+        app:layout_constraintStart_toStartOf="@id/containerProgressBar"
+        app:layout_constraintBottom_toBottomOf="@id/containerProgressBar"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/txtCarregando"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carregando..."
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintTop_toTopOf="@id/containerProgressBar"
+        app:layout_constraintStart_toEndOf="@id/progressBar"
+        app:layout_constraintEnd_toEndOf="@id/containerProgressBar"
+        app:layout_constraintBottom_toBottomOf="@id/containerProgressBar"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

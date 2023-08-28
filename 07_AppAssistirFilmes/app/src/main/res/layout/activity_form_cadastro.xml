@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,88 +7,92 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
 <LinearLayout
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".view.FormCadastro"
-    android:padding="20dp">
+    android:background="@color/white"
+    tools:context=".view.FormCadastro">
 
     <LinearLayout
         android:id="@+id/containerHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/white"
         android:orientation="horizontal"
-
         android:visibility="gone">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Jorge Vision"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:textColor="@color/red"
-            android:layout_marginEnd="40dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ajuda"
-            android:textSize="20sp"
+            android:text="App de Filmes"
+            android:textSize="22sp"
+            android:textColor="@color/red"
             android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AJUDA"
+            android:textSize="18sp"
             android:textColor="@color/black"
-            android:textAllCaps="true"
-            android:layout_marginEnd="20dp"/>
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="50dp"/>
 
         <TextView
             android:id="@+id/txtEntrar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Entrar"
-            android:textSize="20sp"
-            android:textStyle="bold"
+            android:text="ENTRAR"
+            android:textSize="18sp"
             android:textColor="@color/black"
-            android:textAllCaps="true"/>
-
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="30dp"/>
 
     </LinearLayout>
-
+    
     <TextView
         android:id="@+id/txtTitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Tudo pronto para \n assistir?"
-        android:gravity="center"
-        android:layout_gravity="center"
         android:textSize="22sp"
-        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
         android:textStyle="bold"
-        android:textColor="@color/black"/>
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
 
     <TextView
         android:id="@+id/txtDescricao"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Informe seu email para criar ou acessar sua conta."
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:textSize="17sp"
-        android:layout_marginTop="20dp"
+        android:text="Informe seu email para criar ou acessar sua \n conta."
+        android:textSize="18sp"
         android:textStyle="bold"
-        android:textColor="@color/light_gray"/>
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/containerEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         app:errorEnabled="true"
         app:helperTextEnabled="true"
         app:helperTextTextColor="@color/red"
         app:boxStrokeColor="@color/blue"
         app:hintTextColor="@color/light_gray"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -97,8 +100,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
-            android:textCursorDrawable="@drawable/cursor_edittext_cadastro"
-            android:inputType="textEmailAddress"/>
+            android:inputType="textEmailAddress"
+            android:padding="20dp"
+            android:textCursorDrawable="@drawable/cursor_edittext_cadastro"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -111,6 +115,8 @@
         app:helperTextTextColor="@color/red"
         app:boxStrokeColor="@color/blue"
         app:hintTextColor="@color/light_gray"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:visibility="gone"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
@@ -119,8 +125,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Senha"
-            android:textCursorDrawable="@drawable/cursor_edittext_cadastro"
-            android:inputType="numberPassword"/>
+            android:inputType="numberPassword"
+            android:padding="20dp"
+            android:textCursorDrawable="@drawable/cursor_edittext_cadastro"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -128,27 +135,25 @@
         android:id="@+id/btVamosLa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Vamos lá"
-        android:textAllCaps="true"
-        android:layout_marginTop="10dp"
+        android:text="VAMOS LÁ"
         android:textSize="18sp"
+        android:textColor="@color/white"
         android:padding="15dp"
         android:visibility="visible"
-        android:backgroundTint="@color/red"/>
+        android:backgroundTint="@color/red"
+        android:layout_margin="20dp"/>
 
     <Button
         android:id="@+id/btContinuar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Continuar"
-        android:textAllCaps="true"
-        android:layout_marginTop="10dp"
+        android:text="CONTINUAR"
         android:textSize="18sp"
+        android:textColor="@color/white"
         android:padding="15dp"
+        android:backgroundTint="@color/red"
         android:visibility="gone"
-        android:backgroundTint="@color/red"/>
-
+        android:layout_margin="20dp"/>
 
 </LinearLayout>
-
 </ScrollView>
