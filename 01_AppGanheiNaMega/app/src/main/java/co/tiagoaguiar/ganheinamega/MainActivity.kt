@@ -82,9 +82,18 @@ class MainActivity : AppCompatActivity() {
         }
         txtResult.text = numbers.joinToString(" - ")
 
+        //Alternativa 01
+        /*
         val editor = prefes.edit()
         editor.putString("result", txtResult.text.toString())
         editor.apply()
+        */
+
+        //Alternativa 02
+        prefes.edit().apply {
+            putString("result", txtResult.text.toString())
+            apply()
+        }
 
         //commit -> Salvar de forma sincrona (bloquear a interface)
             // Informar se teve sucesso ou não
