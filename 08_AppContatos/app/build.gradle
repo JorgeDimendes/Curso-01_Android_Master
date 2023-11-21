@@ -2,6 +2,8 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
+
+    id("com.google.devtools.ksp")
 }
 
 android {
@@ -33,6 +35,7 @@ android {
     viewBinding{
         enabled = true
     }
+    namespace 'com.agenda.agendadecontatos'
 }
 
 dependencies {
@@ -47,8 +50,10 @@ dependencies {
 
     def roomVersion = "2.4.2"
 
+    //noinspection GradleDependency
     implementation("androidx.room:room-runtime:$roomVersion")
     annotationProcessor("androidx.room:room-compiler:$roomVersion")
-    kapt("androidx.room:room-compiler:$roomVersion")
+    ksp("androidx.room:room-compiler:$roomVersion")
+    //noinspection GradleDependency
     implementation("androidx.room:room-ktx:$roomVersion")
 }

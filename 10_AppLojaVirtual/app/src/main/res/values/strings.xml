@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">Loja Virtual</string>
     <string name="nome_loja"><b> <font color="#3F51B5"> Loja</font></b>  Virtual</string>
+    <string name="hint_nome">Nome</string>
     <string name="hint_email">Email</string>
     <string name="hint_senha">Senha</string>
+    <string name="texto_botao_entrar">Entrar</string>
+    <string name="texto_botao_cadastrar">Cadastrar</string>
+    <string name="texto_tela_cadastro">Não tem uma conta? <b>cadastre-se agora!</b> </string>
+    <string name="titulo_tela_cadastro">Faça seu Cadastro </string>
 </resources>
