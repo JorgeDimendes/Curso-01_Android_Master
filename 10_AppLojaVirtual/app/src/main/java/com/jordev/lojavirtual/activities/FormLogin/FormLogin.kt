@@ -18,6 +18,8 @@ class FormLogin : AppCompatActivity() {
             val intent = Intent(this, FormCadastro::class.java)
             startActivity(intent)
             //finish()
+
+            //25/11/2023 16:20
         }
     }
 }
