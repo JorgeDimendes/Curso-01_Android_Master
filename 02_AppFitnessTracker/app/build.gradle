@@ -8,7 +8,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "co.tiagoaguiar.fitnesstracker"
+        applicationId "com.jordev.fitnesstracker"
         minSdkVersion 21
         targetSdkVersion 31
         versionCode 1
@@ -30,6 +30,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    namespace 'com.jordev.fitnesstracker'
 }
 
 dependencies {
