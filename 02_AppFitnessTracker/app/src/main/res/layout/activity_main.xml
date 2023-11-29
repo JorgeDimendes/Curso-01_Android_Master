@@ -8,7 +8,9 @@
     android:gravity="center"
     tools:context=".MainActivity">
 
-    <LinearLayout
+
+
+    <!--<LinearLayout
         android:id="@+id/btn_imc"
         android:background="@color/colorLighGray"
         android:layout_width="wrap_content"
@@ -28,7 +30,7 @@
             android:layout_height="wrap_content"
             android:text="@string/label_imc" />
 
-    </LinearLayout>
+    </LinearLayout>-->
 
 
 </LinearLayout>

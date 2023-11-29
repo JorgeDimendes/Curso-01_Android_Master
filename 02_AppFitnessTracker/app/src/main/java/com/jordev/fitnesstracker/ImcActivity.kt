@@ -1,12 +1,15 @@
 package com.jordev.fitnesstracker
 
 import android.app.Dialog
+import android.content.Context
 import android.content.DialogInterface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.annotation.StringRes
 import androidx.appcompat.app.AlertDialog
 
 class ImcActivity : AppCompatActivity() {
@@ -29,7 +32,7 @@ class ImcActivity : AppCompatActivity() {
         val btnSent: Button = findViewById(R.id.btn_imc_send)
 
         btnSent.setOnClickListener {
-            if(!validate()){
+            if (!validate()) {
                 Toast.makeText(this, R.string.fields_message, Toast.LENGTH_LONG).show()
                 return@setOnClickListener
             }
@@ -40,31 +43,46 @@ class ImcActivity : AppCompatActivity() {
             val result = calculateIMC(weight, height)
             //Toast.makeText(this, "IMC $result", Toast.LENGTH_LONG).show()
 
+            // Formata o resultado para exibir apenas duas casas decimais
+            //val formattedResult = String.format("%.2f", result)
+
             val imcResponseId = imcResponse(result)
             //Toast.makeText(this, imcResponseId, Toast.LENGTH_LONG).show()
 
-            val dialog = AlertDialog.Builder(this)
+            AlertDialog.Builder(this)
 
-            dialog.setTitle("Seu imc é: ")
-            dialog.setMessage(R.string.calc)
-            dialog.setPositiveButton("texto botao", object : DialogInterface.OnClickListener {
+                .setTitle(getString(R.string.imc_response, result))
+                .setMessage(imcResponseId)
+
+                // Opção 02 - Utilizando lambda
+                .setPositiveButton(android.R.string.ok) { dialog, which ->
+
+                    //Aqui vai rodar depois do click
+
+                }
+                .create()
+                .show()
+
+            //Trabalhar com serviço do teclado para esconder depois de clicado no botão
+            val service = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            service.hideSoftInputFromWindow(currentFocus?.windowToken, 0)
+
+            // Opção 01 - Tem mais codigos
+            /*dialog.setPositiveButton(android.R.string.ok, object : DialogInterface.OnClickListener {
 
                 override fun onClick(dialog: DialogInterface?, which: Int) {
-                    
+                    //Aqui vai rodar depois do click
                 }
 
-            })
-
-            val d = dialog.create()
-            d.show()
+            })*/
 
         }
     }
 
-
-    private fun imcResponse(imc: Double): Int{
+    @StringRes
+    private fun imcResponse(imc: Double): Int {
         //when
-        return when{
+        return when {
             imc < 15.0 -> R.string.imc_severely_low_weight
             imc < 16.0 -> R.string.imc_very_low_weight
             imc < 18.5 -> R.string.imc_low_weight
@@ -97,13 +115,13 @@ class ImcActivity : AppCompatActivity() {
     }
 
 
-    private fun calculateIMC(weight: Int, height: Int): Double{
+    private fun calculateIMC(weight: Int, height: Int): Double {
         // Peso / (altura * altura)
 
         return weight / ((height / 100.0) * (height / 100.0))
     }
 
-    private fun validate(): Boolean{
+    private fun validate(): Boolean {
         // Não pode inserir valores nulos / vazio
         // Não pode inserir/começar com 0
 
