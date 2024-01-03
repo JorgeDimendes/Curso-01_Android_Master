@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">App Meu Portifolio</string>
+
+
+    <string name="txt_nameUser">Jorge Menezes</string>
+    <string name="btn_projetos">Projetos</string>
+    <string name="btn_contato">Contato</string>
+
+
+    <string name="contato_phone">+55 (87) 9 9191-7477</string>
+    <string name="contato_mail">jorgedimendes@hotmail.com</string>
+
+    <string name="toobar_contato">Contato</string>
+    <string name="toobar_projetos">Projetos</string>
+
+    //Projetos
+    <string name="projeto01">Projeto Barbearia</string>
+    <string name="projeto02">Projeto Pizzaria</string>
+    <string name="projeto03">Projeto Marcenaria</string>
+    <string name="btn_Projeto">Detalhes do Projeto</string>
+
+
+
+    <string name="txt_descricao">
+        Sou um desenvolvedor Android com uma paixão inigualável pela criação de
+        experiências digitais inovadoras. \n\nCom muita experiência no desenvolvimento de
+        aplicativos móveis, trago comigo um profundo entendimento do ecossistema Android e uma
+        dedicação incansável à excelência técnica.
+
+        \n\n\n<b>Habilidades</b>
+
+        \n\n<b><font color='#FF0000'>Desenvolvimento Android:</font></b> Especialista em Kotlin, possuo uma profunda compreensão do
+        desenvolvimento Android nativo, entregando aplicativos robustos e eficientes.
+
+        \n\n<b><font color='#FF0000'>Arquitetura de Software:</font></b> Experiente na implementação de arquiteturas modernas como MVVM,
+        Clean Architecture e Jetpack Compose, garantindo código modular e de fácil manutenção.
+
+        \n\n<b><font color='#FF0000'>Testes Automatizados:</font></b> Firme defensor da qualidade do software, implemento testes
+        automatizados de unidade e UI para garantir a estabilidade e a confiabilidade de cada aplicativo.
+
+        \n\n<b><font color='#FF0000'>Mentoria e Liderança Técnica:</font></b> Além de minhas habilidades técnicas, destaco-me como mentor,
+        compartilhando conhecimento e orientando equipes para alcançarem seu melhor desempenho.
+
+    </string>
+
+
+</resources>
