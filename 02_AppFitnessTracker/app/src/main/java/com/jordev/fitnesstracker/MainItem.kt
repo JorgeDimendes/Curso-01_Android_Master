@@ -8,5 +8,5 @@ data class MainItem(
     @DrawableRes val drawableId: Int,
     @StringRes val textStringId: Int,
     val color: Int
-
+//01
 )
