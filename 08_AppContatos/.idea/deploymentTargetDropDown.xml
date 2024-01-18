@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="deploymentTargetDropDown">
@@ -7,4 +8,15 @@
       </entry>
     </value>
   </component>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="deploymentTargetDropDown">
+    <value>
+      <entry key="app">
+        <State />
+      </entry>
+    </value>
+  </component>
+>>>>>>> 859eaaffbf7c613032b5a8a8c85819fcc5f3b6f7
 </project>

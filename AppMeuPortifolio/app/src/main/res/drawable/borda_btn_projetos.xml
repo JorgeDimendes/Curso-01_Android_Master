@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="oval">
 
     <stroke android:color="@color/red" android:width="2dp"/>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <stroke android:color="@color/red" android:width="2dp"/>
+>>>>>>> 859eaaffbf7c613032b5a8a8c85819fcc5f3b6f7
 </shape>
