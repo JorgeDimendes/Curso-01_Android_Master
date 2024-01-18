@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgFotoPerfil"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/foto_perfil"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_nameUser"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginHorizontal="15dp"
+        android:scrollbarThumbVertical="@color/blue"
+        android:background="@drawable/borda_scroll"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:text="@string/txt_descricao"
+            android:textSize="18sp" />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btProjetos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_projetos"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:backgroundTint="@color/blue"
+        android:paddingHorizontal="45dp"
+        android:paddingVertical="10dp"/>
+
+    <Button
+        android:id="@+id/btContato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_contato"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:backgroundTint="@color/blue"
+        android:paddingHorizontal="45dp"
+        android:paddingVertical="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@color/blue"
+        android:layout_marginTop="10dp"/>
+
+
+
+
+
+
+</LinearLayout>
+

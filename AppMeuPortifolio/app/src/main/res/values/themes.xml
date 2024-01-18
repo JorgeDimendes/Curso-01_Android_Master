@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema Principal-->
+    <style name="Base.Theme.AppMeuPortifolio" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/blue</item>
+    </style>
+
+    <!-- Tema Tela de Contato-->
+    <style name="TelaDeContato" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/dark_green</item>
+        <item name="android:statusBarColor">@color/dark_green</item>
+    </style>
+
+    <!-- Tema Tela de Contato-->
+    <style name="TelaDeProjetos" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!--<item name="colorPrimary">@color/dark_green</item>-->
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+
+    <style name="Theme.AppMeuPortifolio" parent="Base.Theme.AppMeuPortifolio" />
+    <style name="Theme.Contato" parent="TelaDeContato" />
+    <style name="Theme.Projetos" parent="TelaDeProjetos" />
+</resources>
