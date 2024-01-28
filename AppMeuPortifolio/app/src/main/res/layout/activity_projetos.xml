@@ -133,6 +133,4 @@
         app:layout_constraintTop_toBottomOf="@id/txt_marcenaria"
         app:layout_constraintBottom_toBottomOf="@id/logo_marcenaria"/>
 
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

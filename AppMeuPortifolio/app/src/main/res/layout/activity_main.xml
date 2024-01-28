@@ -78,10 +78,5 @@
         android:background="@color/blue"
         android:layout_marginTop="10dp"/>
 
-
-
-
-
-
 </LinearLayout>
 
