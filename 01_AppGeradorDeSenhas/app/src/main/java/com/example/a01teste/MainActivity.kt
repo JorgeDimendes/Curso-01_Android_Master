@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         binding.btnGerarSenha.setOnClickListener {
             gerarSenhaAleatoria()
         }
+        // teste
     }
 
     private fun gerarSenhaAleatoria(){
