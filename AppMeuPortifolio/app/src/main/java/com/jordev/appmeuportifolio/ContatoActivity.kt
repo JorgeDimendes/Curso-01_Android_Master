@@ -27,6 +27,8 @@ class ContatoActivity : AppCompatActivity() {
         }
     }
 
+    //Comentario teste 
+
     private fun abrirWhatsApp() {
         val numeroTelefone = "5587991917477"
         val uri = Uri.parse("https://whatsapp.com/send?phone=$numeroTelefone")
