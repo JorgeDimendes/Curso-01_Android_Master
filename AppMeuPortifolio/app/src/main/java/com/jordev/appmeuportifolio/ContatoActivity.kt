@@ -27,7 +27,7 @@ class ContatoActivity : AppCompatActivity() {
         }
     }
 
-    //Comentario teste 
+    //Comentario teste
 
     private fun abrirWhatsApp() {
         val numeroTelefone = "5587991917477"
